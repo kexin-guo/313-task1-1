@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet"  href="style.css"/>
+    <title>Kexin GUO's personal website</title>
+</head>
+
+<body>
+    <ul class="navigation">
+        <li><a>About</a></li>
+        <li><a>Work</a></li>
+        <li><a>Contact</a></li>
+    </ul>
+    
+    <div class="touch">
+        <div><img src="Deakin.png" alt="Deakin " width="100%" height="100%"></div>
+        
+        <div class="content">
+            <h5>Hey, I'm Kexin GUO</h5>
+        </div>
+    </div>
+    <br>
+    <div style="text-align: center;border-radius:100%; overflow:hidden;">
+        <img src="me.JPG" alt="my photo" width="250" height="300">
+        </div>
+
+
+        
+    
+    
+    <div style="text-align: center;">
+        <br>
+        <p>I am an international student for Bachelor of Application Development in Deakin University</p>
+        <br>
+        <p>___________________________________</p>
+        <br>
+        <h1>Here is what I have done so far</h1>
+    </div> 
+
+    <div class="project 1">
+        <div class="photo" style="float:center;clear:both;text-align: center"><img src="./Project1.jpg" width="300" hidth="300"></div>
+        <div class="intro">
+            <h3>Project 1:Find a restaurant</h3>
+            <p>It is an app that can help customers find the restaurant they want on the map.
+            </p>
+        </div>
+    </div> 
+<br>
+    <div class="project 2">
+        <div class="photo" style="float:center;clear:both;text-align: center"><img src="./Project2.jpg" width="300" hidth="300"></div>
+        <div class="intro">
+            <h3>Project 2:Maze robot</h3>
+            <p> 
+                This project shows how to make robot find paths and avoid obstacles automatically.
+        </div>
+    </div>
+    
+    <br>
+    
+    <div style="text-align: center;">
+       
+        <br>
+        <h1>Image Gallery</h1>
+        <br>
+        <p>___________________________________</p>
+    </div> 
+    <br>
+    <div class="box-wrapper" style="text-align: center;">
+        <div style="margin-top:0px" class="box">
+            <img src="./imgs/Deakin1.png" width="100%" height="100%" />
+        </div>
+        <div class="box">
+            <img src="./imgs/Deakin2.png" width="100%" height="100%" />
+        </div>
+        <div class="box">
+            <img src="./imgs/Deakin3.png" width="100%" height="100%" />
+        </div>
+        <div class="box">
+            <img src="./imgs/Deakin4.png" width="100%" height="100%" />
+        </div>
+        <!-- <img class="box" src="Deakin 2.jpg" width="300" height="200"/>
+        <img class="box" src="Deakin 3.jpg" width="300" height="200"/>
+        <img class="box" src="Deakin 4.jpg" width="300" height="200"/> -->
+    </div>
+    
+</body>
+
+</html>
+
+li 
+{
+    display:inline;
+}
+a:link,a:visited
+{
+    text-decoration:none;
+    Vertical-align:top;
+}
+body>ul>li>a
+{                  
+    text-decoration:none;
+    color:rgb(10, 161, 111);
+    font-size:15px;
+    font-weight:700;
+    border-right:dotted thin;
+    padding-left:10px;
+    padding-right:10px;
+    
+    
+}
+.touch 
+{
+    /* height: 700px;
+    width: 4000px; */
+    overflow:hidden;
+    position:relative;
+}
+.touch .content 
+{
+    height:160px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.664);
+    color:rgba(255, 255, 255, 0.76);
+    top:20;
+    bottom:0;
+    left:0;
+    right:10;
+   
+    position:absolute;
+    font-size:40px;
+    visibility:hidden;
+    text-align:center;
+   
+}
+.touch:hover .content
+{
+    visibility:visible;
+    background-color:rgba(0,0,0,0.5)
+}
+p
+{
+    color:rgb(10, 156, 161);
+}
+h1
+{
+    color:rgb(10, 156, 161);
+}
+h2
+{
+    color:rgb(10, 156, 161);
+}
+
+
+
+.intro{
+    /* float:right; */
+    width:50%;
+    text-align: center;
+    font-size: 19px;
+    margin: 0 auto
+}
+.box {
+	height:auto;
+	/* padding:1em;
+	margin-top:1em; */
+	-moz-page-break-inside:avoid;
+	-webkit-column-break-inside:avoid;
+	break-inside:avoid;
+	border:1px solid #000;
+}
+.spe {
+	height:225px;
+}
+.box-wrapper {
+	-moz-column-count:4;
+	/* Firefox */
+    -webkit-column-count:4;
+	/* Safari 和 Chrome */
+    column-count:4;
+	-moz-column-gap:1em;
+	-webkit-column-gap:1em;
+	column-gap:1em;
+}
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .box-wrapper {
+        -moz-column-count:2;
+        /* Firefox */
+        -webkit-column-count:2;
+        /* Safari 和 Chrome */
+        column-count:2;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .box-wrapper {
+        -moz-column-count:1;
+        /* Firefox */
+        -webkit-column-count:1;
+        /* Safari 和 Chrome */
+        column-count:1;
+    }
+}
+

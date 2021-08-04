@@ -1,0 +1,112 @@
+li 
+{
+    display:inline;
+}
+a:link,a:visited
+{
+    text-decoration:none;
+    Vertical-align:top;
+}
+body>ul>li>a
+{                  
+    text-decoration:none;
+    color:rgb(10, 161, 111);
+    font-size:15px;
+    font-weight:700;
+    border-right:dotted thin;
+    padding-left:10px;
+    padding-right:10px;
+    
+    
+}
+.touch 
+{
+    /* height: 700px;
+    width: 4000px; */
+    overflow:hidden;
+    position:relative;
+}
+.touch .content 
+{
+    height:160px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.664);
+    color:rgba(255, 255, 255, 0.76);
+    top:20;
+    bottom:0;
+    left:0;
+    right:10;
+   
+    position:absolute;
+    font-size:40px;
+    visibility:hidden;
+    text-align:center;
+   
+}
+.touch:hover .content
+{
+    visibility:visible;
+    background-color:rgba(0,0,0,0.5)
+}
+p
+{
+    color:rgb(10, 156, 161);
+}
+h1
+{
+    color:rgb(10, 156, 161);
+}
+h2
+{
+    color:rgb(10, 156, 161);
+}
+
+
+
+.intro{
+    /* float:right; */
+    width:50%;
+    text-align: center;
+    font-size: 19px;
+    margin: 0 auto
+}
+.box {
+	height:auto;
+	/* padding:1em;
+	margin-top:1em; */
+	-moz-page-break-inside:avoid;
+	-webkit-column-break-inside:avoid;
+	break-inside:avoid;
+	border:1px solid #000;
+}
+.spe {
+	height:225px;
+}
+.box-wrapper {
+	-moz-column-count:4;
+	/* Firefox */
+    -webkit-column-count:4;
+	/* Safari 和 Chrome */
+    column-count:4;
+	-moz-column-gap:1em;
+	-webkit-column-gap:1em;
+	column-gap:1em;
+}
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .box-wrapper {
+        -moz-column-count:2;
+        /* Firefox */
+        -webkit-column-count:2;
+        /* Safari 和 Chrome */
+        column-count:2;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .box-wrapper {
+        -moz-column-count:1;
+        /* Firefox */
+        -webkit-column-count:1;
+        /* Safari 和 Chrome */
+        column-count:1;
+    }
+}
